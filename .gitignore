@@ -1,0 +1,82 @@
+# macOS specific
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS resource forks
+._*
+
+# Icon files
+Icon?
+Thumbs.db
+ehthumbs.db
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Build outputs
+bin/
+obj/
+
+# Auto-generated files
+*.g.*
+*.nupkg
+*.snupkg
+*.user
+*.suo
+*.sln.docstates
+*.tlog
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+project.lock.json
+
+# Logs
+*.log
+*.tlog
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# Xamarin/Mobile specific
+*.apk
+*.aab
+*.ipa
+*.entitlements
+*.plist
+
+# MAUI specific
+platforms/android/bin/
+platforms/android/obj/
+platforms/ios/bin/
+platforms/ios/obj/
+platforms/maccatalyst/bin/
+platforms/maccatalyst/obj/
+platforms/tizen/bin/
+platforms/tizen/obj/
+platforms/windows/bin/
+platforms/windows/obj/
+
+# Configurations and Secrets
+secrets.json
+.env
+
+# Rider
+.idea/
+
+# Other exclusions
+*.pidb
+*.mdb
+*.pdb
+
+# Build and IDE cache files
+*.resharper
+_ReSharper*
+*/.vs/
+

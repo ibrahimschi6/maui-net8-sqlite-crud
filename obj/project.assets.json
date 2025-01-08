@@ -26703,11 +26703,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ibrahimsisaneci/MyMauiApp/MyMauiApp.csproj",
+      "projectUniqueName": "/Users/ibrahimsisaneci/repo/MyMauiApp/MyMauiApp.csproj",
       "projectName": "MyMauiApp",
-      "projectPath": "/Users/ibrahimsisaneci/MyMauiApp/MyMauiApp.csproj",
+      "projectPath": "/Users/ibrahimsisaneci/repo/MyMauiApp/MyMauiApp.csproj",
       "packagesPath": "/Users/ibrahimsisaneci/.nuget/packages/",
-      "outputPath": "/Users/ibrahimsisaneci/MyMauiApp/obj/",
+      "outputPath": "/Users/ibrahimsisaneci/repo/MyMauiApp/obj/",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "configFilePaths": [
