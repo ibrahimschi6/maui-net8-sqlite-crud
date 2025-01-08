@@ -63,6 +63,7 @@ This guide explains how to set up and develop a .NET MAUI (Multi-platform App UI
 
 **Platforms Folder:** Contains platform-specific code for iOS, Android, macOS, and Windows.
 
+**AppShell.xaml & AppShell.cs:** Used to define the navigation hierarchy of the application.
 
 ---
 
