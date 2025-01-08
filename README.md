@@ -55,6 +55,15 @@ This guide explains how to set up and develop a .NET MAUI (Multi-platform App UI
    cd MyMauiApp
    ```
 
+## 2. Understand the Project Structure
+
+**App.xaml & App.xaml.cs:** Define the app-wide resources and entry point.
+
+**MainPage.xaml & MainPage.xaml.cs:** The default UI and logic for your app.
+
+**Platforms Folder:** Contains platform-specific code for iOS, Android, macOS, and Windows.
+
+
 ---
 
 ## 3. Configure the Environment
