@@ -80,6 +80,17 @@ This guide explains how to set up and develop a .NET MAUI (Multi-platform App UI
   dotnet build -t:Run -f net7.0-ios
   ```
 
+- Use the following command to see available iOS devices or simulators:
+  ```bash
+  xcrun simctl list
+  ```
+
+
+- Use the following command to run the app on a specific iOS device:
+  ```bash
+  dotnet build -t:Run -f net8.0-ios /p:_DeviceName=:v2:udid=<DEVICE ID>
+  ```
+
 ### b. Run on Android
 - Use this command to run the app on an Android device/emulator:
   ```bash
