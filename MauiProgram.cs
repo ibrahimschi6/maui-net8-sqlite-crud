@@ -18,6 +18,7 @@ public static class MauiProgram
 	    builder.Services.AddSingleton<LocalDbService>();
 
         builder.Services.AddTransient<MainPage>();
+        builder.Services.AddTransient<RTLSamplePage>();
 	
 #if DEBUG
 		builder.Logging.AddDebug();
