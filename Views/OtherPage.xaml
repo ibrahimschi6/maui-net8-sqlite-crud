@@ -9,5 +9,13 @@
             Text="Welcome to Other Page"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+
+               <StackLayout>
+        <!-- Navigation Button -->
+        <Button Text="Go to Settings Page"
+                Clicked="OnNavigateButtonClicked" />
+    </StackLayout>
+
+    
     </VerticalStackLayout>
 </ContentPage>

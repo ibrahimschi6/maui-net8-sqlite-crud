@@ -7,6 +7,16 @@
     xmlns:views="clr-namespace:MyMauiApp.Views"
     Shell.FlyoutBehavior="Disabled"
     Title="MyMauiApp">
+
+<!-- Flyout Header -->
+    <Shell.FlyoutHeader>
+        <Grid BackgroundColor="#6200EE" Padding="20">
+            <Label Text="My App" 
+                   FontSize="24" 
+                   TextColor="White" />
+        </Grid>
+    </Shell.FlyoutHeader>
+
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
         
             <Tab Title="Home">
@@ -36,5 +46,8 @@
             Title="RTL Sample"
             ContentTemplate="{DataTemplate local:RTLSamplePage}"
             Route="RTLSamplePage"/>
+    </FlyoutItem>
+     <FlyoutItem Title="Settings" >
+        <ShellContent ContentTemplate="{DataTemplate views:SettingsPage}" />
     </FlyoutItem>
 </Shell>
