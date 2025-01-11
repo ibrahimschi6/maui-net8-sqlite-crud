@@ -4,16 +4,37 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:MyMauiApp"
+    xmlns:views="clr-namespace:MyMauiApp.Views"
     Shell.FlyoutBehavior="Disabled"
     Title="MyMauiApp">
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        
+            <Tab Title="Home">
+                <ShellContent
+                    Title="HomeA"
+                    ContentTemplate="{DataTemplate local:MainPage}"
+                    Route="MainPage"/>
 
-    <!-- <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" /> -->
+                    <ShellContent
+                    Title="HomeB"
+                    ContentTemplate="{DataTemplate local:MainPage}"
+                    Route="MainPage"/>
+            </Tab>
 
- <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:RTLSamplePage}"
-        Route="RTLSamplePage" /> 
+        <ShellContent
+            Title="Favorites"
+            ContentTemplate="{DataTemplate views:Favorites}"
+            Route="Favorites"/>
+
+        <ShellContent
+            Title="Other Page"
+            ContentTemplate="{DataTemplate views:OtherPage}"
+            Route="OtherPage"/>
+
+
+        <ShellContent
+            Title="RTL Sample"
+            ContentTemplate="{DataTemplate local:RTLSamplePage}"
+            Route="RTLSamplePage"/>
+    </FlyoutItem>
 </Shell>
