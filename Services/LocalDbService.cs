@@ -7,11 +7,16 @@ namespace MyMauiApp
 
     public class LocalDbService
     {
-        private const string DB_NAME = "demno_locall_DB.db3";
+        //private const string DB_NAME = "demno_local_DB.db3";
+        private const string DB_NAME = "PreCreatedDBFile.db";
+
         private readonly SQLiteAsyncConnection _connection;
 
         public LocalDbService()
         {
+
+           
+
             _connection = new SQLiteAsyncConnection(Path.Combine(FileSystem.AppDataDirectory, DB_NAME));
             _connection.CreateTableAsync<Customer>();
 
@@ -20,7 +25,7 @@ namespace MyMauiApp
 
         private void LoadTestData()
         {
-            int length = 10;
+            int length = 3;
             Customer customer;
 
             for (int i = 0; i < length; i++)

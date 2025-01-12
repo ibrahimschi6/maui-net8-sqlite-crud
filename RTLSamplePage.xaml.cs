@@ -4,7 +4,7 @@ public partial class RTLSamplePage : ContentPage
 {
 	
 	public readonly LocalDbService _dbService;
-	public List<Customer> Customers { get; set; }
+	public List<Customer>? Customers { get; set; }
 
 	public RTLSamplePage(LocalDbService dbService)
 	{
